@@ -5,6 +5,7 @@ var HomeController = require("../controllers/HomeController");
 var UserController = require("../controllers/UserController");
 
 var AdminAuth = require("../middleware/adminAuth");
+const FuncionariosController = require("../controllers/FuncionariosController");
 
 
 router.get('/', HomeController.index);//rota de consulta é method get  
