@@ -43,7 +43,7 @@
            email: this.email
         }).then(res => {
             localStorage.setItem('token',res.data.token);  // salvando token
-            this.$router.push({name: 'Home'});     
+            //this.$router.push({name: 'Home'});     
         }).catch(err => {
            this.msg = err.response.data.error;
            console.log(this.msg);

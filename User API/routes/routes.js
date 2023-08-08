@@ -19,8 +19,8 @@ router.post('/mudasenha', UserController.mudaSenha);
 router.post('/login', UserController.login);
 router.post('/validate',AdminAuth,HomeController.validate);
 
-router.get('/func', FuncionariosController.listaFuncionarios);  
-
+router.get('/func/index', FuncionariosController.listaFuncionarios);  
+router.post('/novofunc', FuncionariosController.criaFunc);
 
 
 module.exports = router;

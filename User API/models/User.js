@@ -41,8 +41,6 @@ class User{
         } catch (error) {
             console.log(error);
         }
-       
-       
     }
     async findEmail(email){
         try{

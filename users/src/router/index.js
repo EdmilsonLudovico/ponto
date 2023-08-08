@@ -5,6 +5,10 @@ import Register from '../views/RegisterView.vue'
 import Login from '../views/LoginView.vue'
 import UsersAdmView from '../views/UsersAdmView'
 
+
+import FuncionarioView from '../views/FuncionarioView'
+
+
 import axios from 'axios'
 
 function AdminAuth(to, from, next){
@@ -54,6 +58,11 @@ const routes = [
     name: 'UsersAdmView',
     component: UsersAdmView,
     beforeEnter: AdminAuth
+  },
+  {
+    path: '/funcionario/index',
+    name: 'FuncionarioView',
+    component: FuncionarioView
   },
   {
     path: '/about',
